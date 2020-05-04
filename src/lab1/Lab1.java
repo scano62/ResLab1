@@ -33,9 +33,10 @@ public class Lab1 {
             switch (opc) {
 
                 case "1":
-                   // boolean valor = PRIMO();
-                    //System.out.println("Resultado es : " + valor);
-                    System.out.println("Interesante");
+
+                   boolean valor = PRIMO();
+                    System.out.println("Resultado es : " + valor);
+
                 case "2":
 
                 case "3":
@@ -49,6 +50,29 @@ public class Lab1 {
         }
 
     }
+    
+    
+    static boolean PRIMO() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese el valor");
+        String val1 = sc.nextLine();
+        int val1_int = Integer.valueOf(val1);
+
+        int contador = 2;
+        boolean primo = true;
+
+        while ((primo) && (contador != val1_int)) {
+            if (val1_int % contador == 0) {
+                primo = false;
+            }
+            contador++;
+        }
+
+        return primo;
+
+    }
+    
+    
 
     
 
