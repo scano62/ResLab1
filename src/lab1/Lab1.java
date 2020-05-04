@@ -36,7 +36,7 @@ public class Lab1 {
                    // boolean valor = PRIMO();
                     //System.out.println("Resultado es : " + valor);
                 case "2":
-
+                        System.out.println("CHICHOREX ");
                 case "3":
 
                 case "4":
